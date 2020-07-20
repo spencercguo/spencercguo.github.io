@@ -1,0 +1,72 @@
+body {
+    margin: 40px auto;
+    max-width: 650px;
+    line-height: 1.8;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
+    background-color: #7784a3;
+    color: white;
+    padding: 0 10px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 400;
+}
+h2 {
+    font-size: 30px;
+    /*font-weight: bold;*/
+    line-height: 1;
+}
+h3 {
+    font-size: 24px;
+    /*font-weight: bold;*/
+    line-height: 1.5;
+}
+h1, h2, h3 {
+    font-family: 'IBM Plex Serif', sans-serif;
+}
+h2, h3 {
+    font-weight: 200;
+}
+a {
+    color: #a9a3ff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+img {
+    width: 65%;
+    display: block;
+    margin: 0 auto;
+}
+p {
+    margin-bottom: 0;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid white;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.email {
+    text-align:center;
+    color: white;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
