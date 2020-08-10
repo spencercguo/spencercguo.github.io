@@ -24,7 +24,66 @@
         </script>
     </head>
     <body>
+<<<<<<< HEAD
         <h1>Research</h1>
+=======
+        <h1>Spencer Guo</h1>
+
+        <hr>
+        <a href="#water">Water</a> | <a href="#fish">Zebrafish</a> | <a href="#insulin">Insulin</a>
+        <hr>
+
+        <a id="water"></a>
+        <h2>On wiggly water molecules</h2>
+
+        <p> During my last two years at Stanford, I was looking into some of the fascinating properties of water for my work in the <a href="http://markland.stanford.edu/">Markland group</a>.
+        </p> 
+
+        <h3>Water, jiggling balls, and excitations</h3>
+        <p>
+          Water is ubiquitous.
+          It drives our global climate, it powers essential biological functions, it spawns civilizations, it feeds our species.
+        And yet, it behaves particularly strangely, with its two hydrogens and single oxygen contributing to a wide variety of chemically useful properties.
+        </p>
+
+        <p>
+          One of the most illuminating methods of understanding water's properties is via infrared (IR) spectroscopy.
+          IR spectroscopy excites vibrational modes, or t2he stretches and twists and bends of a flexible molecule.
+          In a sense, one might think of these vibrational excitations as a dance, where the two O-H bonds flex in concert, each linked with the movements of the other (i.e. vibrational coupling).
+        </p>
+
+        <p>
+          Much work has been done on computational simulation of IR spectra, which would enable useful studies in aqueous enzyme environments, for example.
+          It turns out that one can obtain the IR spectrum of a molecule by taking the Fourier-transform of its dipole autocorrelation function.
+          Generally, these dipoles are obtained from molecular dynamics (MD) simulations, which is where my work comes in.
+        </p>
+
+        <p>
+          Traditionally, one performs classical MD simulations, in which molecules are most commonly treated as balls connected by springs and thus subject to harmonic potentials.
+          Many force fields exist which attempt to model the jiggling behavior of these molecules, to varying degrees of success.
+          In principle, one can simply integrate Newton's equations of motion to propagate the system forward in time.
+          However, these force field-based methods are limited by the specific parameters used, and ignore electronic effects often essential for describing chemical behavior.
+
+          In an ideal world, we would be able to perfectly calculate the electronic structure (i.e. the wavefunction) of our many-body system of interest, thus understanding perfectly its chemical properties; however, computional tools obviously limit the tractability of this approach.
+          Nevertheless, in the past few decades, advancements in hardware arising primarily from Moore's law and better approaches towards calculating electronic structure have rendered <i>ab initio</i> molecular dyanmics (AIMD) feasible (here, <i>ab initio</i> refers to a first-principles approach which relies on quantum mechanical calculations).
+        </p>
+
+        <p>
+          Perhaps the most popular approach today employs density functional theory (DFT), which is given a lucid pedagogical introduction <a href="https://dasher.wustl.edu/chem430/readings/ijqc-113-96-13.pdf">here</a>.
+          I won't go too much into the details, since they can be found in many places on the Internet, but the main thrust involves treating the ground-state energy of a molecule as a <i>functional of the electron density</i> (hence the name).
+<!--           \begin{equation}
+            E_0 = E[n(\textbf{r})]
+          \end{equation} -->
+          <!-- where $$n(\textbf{r})$$ is the electronic density. -->
+          Here a functional simply refers to something which takes in a function and outputs a number (e.g. a definite integral).
+        </p>
+
+        <p>
+          Despite its incredible utility and general performance on a wide range of chemical systems, DFT scales rather poorly with the system size, often making it a poor choice for larger molecules.
+          This is where semi-empirical methods come in, and in my case, density functional tight-binding (DFTB) to be precise.
+          Semi-empirical methods refer to a broad range of techniques which lie somewhat in between classical and quantum mechanical calculations.
+          Generalizing slightly, they essentially maintain the wavefunction-based approach of quantum chemical calculations while reducing complexity by adding several empirically-determined parameters.
+>>>>>>> af0b15e (added morpholino section)
 
         <hr>
         A collection of some random writings/thoughts on science and research! 
@@ -47,9 +106,19 @@
         </p>
 
         <hr>
+<<<<<<< HEAD
+=======
+        <a id="fish"></a>
+        <h2>On zebrafish</h2>
+
+        <p>During my first and second year at Stanford, I worked on a project in chemical biology to study zebrafish.
+          This research was performed in <a href="http://chen.stanford.edu/">James Chen's</a> group in Chemical and Systems Biology.
+        </p>
+>>>>>>> af0b15e (added morpholino section)
 
         <h2>Some of my favorite papers</h2>
         <p>
+<<<<<<< HEAD
         An (incomplete) listing . . . (<a href="research/papers.html">read more</a>)
         </p>
         
@@ -57,6 +126,71 @@
         <hr>
         <p><a href="index.html">Home</a> | <a href="research.html">Research</a>
         </p> 
+=======
+          For those who are not particularly familiar with biotech industry, Moderna is a (rather high-profile) company founded in 2010 by several Harvard faculty.
+          Its focus is drugs based on RNA (DNA's less boring counterpart), rather than the conventional small-molecule approach.
+          In particular, the biotech industry has long relied on the protein-target approach, in which one first identifies a faulty protein of interest (e.g. a checkpoint gone haywire in cancer cells) and then designs a molecular substance to block or activate that protein.
+          However, this often doesn't work as expected, causing unwanted side effects or even horrible toxicity.
+          Hence, the biotech industry has turned to other technologies, such as biologics, and, in Moderna's case, mRNA.
+          Biologics are the kinds of proteins-turned-drugs that have basically included all the major breakthrough cancer therapies of the last few decades, including Herceptin (breast cancer), Rituxan (lymphoma) and Keytruda (melanoma).
+      </p>
+          <p>
+          The other big thing that might turn out to revolutionize our current therapeutics are oligonucleotides, such as RNA.
+          Because many diseases are caused by the nuclear material of their vector (most prominently viruses), RNA provides a unique strategy towards attacking new targets or even circumventing existing problems.
+          Despite their great promise, it's still far too soon to determine whether this new strategy will pan out.
+        </p>
+
+        <h3>
+          Morpholinos
+        </h3>
+        <p>
+          Now, it turns out that long before people began thinking about using synthetic oligonucleotides for therapeutic purposes, researchers have employed them for probing biological systems.
+          In develomental biology, scientists often want to ask questions along the lines of when and where to specific anatomies develop?
+          More specifically, we often are trying to figure out how specific genes, molecules, and environmental cues interact with both <i>spatial</i> and <i>temporal</i> control to generate the body plans of animals we see around us.
+          For example, how do we get left-right symmetry and asymmetry? 
+          How does anterior-posterior organization arise?
+          How do limbs develop?
+          Since all these processes are controlled at heart by the action of genes and proteins, oligonucleotides present a powerful tool for probing them.
+          In essence they allow us to selectively turn off (and on) genes at different points during development and at different locations in the body.
+          With this knowledge, we can begin to untangle the complex biological networks that orchestrate the creation of a living organism from a single cell.
+        </p>
+        <p>
+          Morpholinos are a kind of oligonucleotide that chemical biologists have created to control such developmental processes.
+          Recall from biology that each RNA nucleotide is composed of a sugar backbone (ribose), a nitrogenous base (adenine, guanine, cytosine, or uracil), and a phosphate group. 
+          In morpholinos, however, there are two major changes with perturb the chemical stability: first, the ribose is converted to a morpholine ring, a six-membered oxygen and nitrogen heterocycle; and, second, one of the oxygens on the phosphate group is converted to a nitrogen, making a <i>phosphoramidate</i> group.
+          The details are not so important, but the effect of these changes is that morpholinos are much more stable <i>in vivo</i> than RNA, which disintegrates rather quickly (and thus renders it difficult to use for biological experiments).
+        </p>
+
+        <p>
+        	As a result, a synthetic morpholino, armed with the correct complementary gene sequence to a target mRNA, can hybridize (bind) to that mRNA <i>in vivo</i> and knockdown (i.e., shutoff) the gene of interest.
+        	Although morpholinos are a formidable tool for investigating effects of specific genes, they suffer from precision both spatially and temporally.
+        	When working with zebrafish, the typical protocol involves injecting the embryos at the single-cell (zygote) stage with the morpholino of choice, but this inevitably causes the morpholino to spread throughout the fish as it grows, preventing one from, say, turnoff a gene in only the fish's tail.
+        	At the same time, it is challenging to control the time at which the morpholino acts.
+        	After injection, the morpholino simply diffuses throughout the cells, encountering mRNAs and turning off genes in a stochastic fashion.
+        </p>
+
+        <p>
+        	As I mentioned at the beginning of this section, these two aspects—spatial and temporal control—are essential to a detailed understanding of development; but the native approach of injecting morpholinos seems to preclude this.
+        	A key development then was the idea of <i>caged</i> morpholinos (cMOs).
+        	What if we could turn on and turn off the morpholino activity while it was already in the zebrafish, perhaps by activating it through an external cue?
+        	The idea then is as follows: through a chemical modification of the morpholino, we attach the two ends together (caging) so that it is unable to bind to the target mRNA.
+        	Then, we use light (which can be tuned very selectively) to break apart the chemical cage and allow the morpholino to hybridize.
+        </p>
+
+        <p>
+        	
+        </p>
+
+        <p><i>Under construction...!</i></p> 
+
+        <hr>
+        <a id="insulin"></a>
+        <h2>On insulin</h2>
+        <p><i>Check back soon for more updates!</i>
+
+        <hr>
+        <p><a href="index.html">Home</a></p>
+>>>>>>> af0b15e (added morpholino section)
 
         <small>
             Last updated May 26, 2021.
