@@ -30,6 +30,11 @@ h1, h2, h3 {
 h2, h3 {
     font-weight: 200;
 }
+
+caption {
+    font-size: 16px;
+    font-weight: light;
+}
 a {
     color: #dbbaff;
     text-decoration: none;
@@ -53,6 +58,8 @@ hr {
     margin: 1em 0;
     padding: 0;
 }
+
+
 
 
 .email {
