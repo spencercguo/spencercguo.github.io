@@ -59,7 +59,13 @@ hr {
     padding: 0;
 }
 
+emph {
+    font-style: italic;    
+}
 
+strong {
+    font-weight: heavy;
+}
 
 
 .email {
