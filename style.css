@@ -60,7 +60,7 @@ hr {
 }
 
 emph {
-    font-style: italic;    
+    font-style: italic;
 }
 
 strong {
@@ -83,4 +83,70 @@ strong {
   content: "";
   display: table;
   clear: both;
+}
+
+
+/**********
+Footnotes from https://stevans.github.io/inline-footnotes/
+**********/
+
+/*
+Example usage
+<input type="checkbox" id="cb1" /><label for="cb1"><sup></sup></label><span><br><br>This is the footnote text.<br><br></span>
+
+*/
+
+/* This creates the counter  */
+body {
+  counter-reset: cb_counter_var;
+}
+
+/* This increments the counter value and defines
+the displayed content  */
+sup::after {
+  counter-increment: cb_counter_var;
+  content: counter(cb_counter_var);
+}
+
+/* This initially hides the footnote (i.e. span)  */
+input[type=checkbox] ~ span {
+    display:none;
+}
+
+/* This styles the footnote text which appears
+when the label is clicked  */
+input[type=checkbox]:checked ~ span {
+    display:inline;
+    font-size: 75%;
+    font-family:'Roboto Mono';
+    color: #eee;
+    cursor:default;
+}
+
+/* This permanently hides the checkbox  */
+input[type=checkbox]{
+    display:none;
+}
+
+/* This styles the footnote label to appear
+like a hyperlink  */
+input[type=checkbox] ~ label {
+    display:inline;
+    cursor:pointer;
+    color:#dbbaff;
+    text-decoration:none;
+}
+
+/* This styles the footnote label when the mouse
+hover over it */
+input[type=checkbox] ~ label:hover {
+    text-decoration:underline;
+    cursor:pointer;
+    color:#dbbaff;
+}
+
+/* This styles the footnote label after it is clicked */
+input[type=checkbox]:checked ~ label {
+    color:#dbbaff;
+    text-decoration:none;
 }
