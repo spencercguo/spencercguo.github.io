@@ -92,3 +92,28 @@
   from {opacity: .4}
   to {opacity: 1}
 }
+
+/* #comment-box, #post {
+/*     border: none;
+/* }
+
+/* Comment box settings */
+#HCB_comment_box {
+    font-family: "Source Sans Pro", sans-serif;
+}
+#HCB_comment_box #HCB_comment_form_box {
+    padding-bottom: 0px;
+}
+#HCB_comment_box .hcb-icon {
+	width: 5%;
+	display: block;
+	margin: 0 auto;
+}
+#HCB_comment_box #hcb_form {
+    font-family: "Source Sans Pro", sans-serif;
+    margin-top: 0px;
+}
+#HCB_comment_box #comments_list {
+    font-family: "Source Sans Pro", sans-serif;
+    margin-top: 0px;
+}

@@ -12,11 +12,10 @@ body {
 
 h1 {
     font-size: 40px;
-    font-weight: 400;
+    font-weight: bolder;
 }
 h2 {
     font-size: 30px;
-    /*font-weight: bold;*/
     line-height: 1;
 }
 h3 {
@@ -28,7 +27,7 @@ h1, h2, h3 {
     font-family: 'IBM Plex Serif', sans-serif;
 }
 h2, h3 {
-    font-weight: 200;
+    font-weight: bolder;
 }
 
 caption {
@@ -40,12 +39,15 @@ a {
     text-decoration: none;
 }
 a:hover {
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    font-style: italic;
 }
 img {
-    width: 65%;
+    width: 75%;
+    height: 50%;
     display: block;
     margin: 0 auto;
+    border-radius: 50%;
 }
 p {
     margin-bottom: 0;
@@ -115,7 +117,7 @@ sup::after {
 }
 
 /* This initially hides the footnote (i.e. span)  */
-input[type=checkbox] ~ span {
+input[type=checkbox]:not(:checked) ~ span {
     display:none;
 }
 
@@ -156,3 +158,5 @@ input[type=checkbox]:checked ~ label {
     color:#dbbaff;
     text-decoration:none;
 }
+
+
