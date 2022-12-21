@@ -36,7 +36,7 @@ caption {
     font-weight: light;
 }
 a {
-    color: #dbbaff;
+    color: #edbaff;
     text-decoration: none;
 }
 a:hover {
@@ -67,7 +67,8 @@ emph {
 }
 
 strong {
-    font-weight: heavy;
+    font-weight: bold;
+    color: #a1dde9;
 }
 
 
