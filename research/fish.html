@@ -1,108 +1,143 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <title>Spencer Guo | Zebrafish</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="../style.css">
-        <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Source+Sans+Pro:light|Roboto+Mono:light">
 
-        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-          <script id="MathJax-script" async
-                  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-          </script>
-        <!-- Global Site Tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-73543332-3"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments)};
-          gtag('js', new Date());
+<head>
+  <title>Spencer Guo | Zebrafish</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Source+Sans+Pro:light|Roboto+Mono:light">
 
-          gtag('config', 'UA-73543332-3');
-        </script>
-    </head>
-    <body>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-73543332-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments) };
+    gtag('js', new Date());
 
-        <h1>On zebrafish</h1>
+    gtag('config', 'UA-73543332-3');
+  </script>
+</head>
 
-        <p>During my first and second year at Stanford, I worked on a project in chemical biology to study zebrafish.
-          This research was performed in <a href="http://chen.stanford.edu/">James Chen's</a> group in Chemical and Systems Biology.
-        </p>
+<body>
 
-        <h3>
-          Oligonucleotides, or why Moderna is a billion-dollar company.
-        </h3>
-        <p>
-          For those who are not particularly familiar with biotech industry, Moderna is a (rather high-profile) company founded in 2010 by several Harvard faculty.
-          Its focus is drugs based on RNA (DNA's less boring counterpart), rather than the conventional small-molecule approach.
-          In particular, the biotech industry has long relied on the protein-target approach, in which one first identifies a faulty protein of interest (e.g. a checkpoint gone haywire in cancer cells) and then designs a molecular substance to block or activate that protein.
-          However, this often doesn't work as expected, causing unwanted side effects or even horrible toxicity.
-          Hence, the biotech industry has turned to other technologies, such as biologics, and, in Moderna's case, mRNA.
-          Biologics are the kinds of proteins-turned-drugs that have basically included all the major breakthrough cancer therapies of the last few decades, including Herceptin (breast cancer), Rituxan (lymphoma) and Keytruda (melanoma).
-      </p>
-          <p>
-          The other big thing that might turn out to revolutionize our current therapeutics are oligonucleotides, such as RNA.
-          Because many diseases are caused by the nuclear material of their vector (most prominently viruses), RNA provides a unique strategy towards attacking new targets or even circumventing existing problems.
-          Despite their great promise, it's still far too soon to determine whether this new strategy will pan out.
-        </p>
+  <h1>On zebrafish</h1>
 
-        <h3>
-          Morpholinos
-        </h3>
-        <p>
-          Now, it turns out that long before people began thinking about using synthetic oligonucleotides for therapeutic purposes, researchers have employed them for probing biological systems.
-          In develomental biology, scientists often want to ask questions along the lines of when and where to specific anatomies develop?
-          More specifically, we often are trying to figure out how specific genes, molecules, and environmental cues interact with both <i>spatial</i> and <i>temporal</i> control to generate the body plans of animals we see around us.
-          For example, how do we get left-right symmetry and asymmetry?
-          How does anterior-posterior organization arise?
-          How do limbs develop?
-          Since all these processes are controlled at heart by the action of genes and proteins, oligonucleotides present a powerful tool for probing them.
-          In essence they allow us to selectively turn off (and on) genes at different points during development and at different locations in the body.
-          With this knowledge, we can begin to untangle the complex biological networks that orchestrate the creation of a living organism from a single cell.
-        </p>
-        <p>
-          Morpholinos are a kind of oligonucleotide that chemical biologists have created to control such developmental processes.
-          Recall from biology that each RNA nucleotide is composed of a sugar backbone (ribose), a nitrogenous base (adenine, guanine, cytosine, or uracil), and a phosphate group.
-          In morpholinos, however, there are two major changes with perturb the chemical stability: first, the ribose is converted to a morpholine ring, a six-membered oxygen and nitrogen heterocycle; and, second, one of the oxygens on the phosphate group is converted to a nitrogen, making a <i>phosphoramidate</i> group.
-          The details are not so important, but the effect of these changes is that morpholinos are much more stable <i>in vivo</i> than RNA, which disintegrates rather quickly (and thus renders it difficult to use for biological experiments).
-        </p>
+  <p>During my first and second year at Stanford, I worked on a project in chemical biology to study zebrafish.
+    This research was performed in <a href="http://chen.stanford.edu/">James Chen's</a> group in Chemical and Systems
+    Biology.
+  </p>
 
-        <p>
-        	As a result, a synthetic morpholino, armed with the correct complementary gene sequence to a target mRNA, can hybridize (bind) to that mRNA <i>in vivo</i> and knockdown (i.e., shutoff) the gene of interest.
-        	Although morpholinos are a formidable tool for investigating effects of specific genes, they suffer from precision both spatially and temporally.
-        	When working with zebrafish, the typical protocol involves injecting the embryos at the single-cell (zygote) stage with the morpholino of choice, but this inevitably causes the morpholino to spread throughout the fish as it grows, preventing one from, say, turnoff a gene in only the fish's tail.
-        	At the same time, it is challenging to control the time at which the morpholino acts.
-        	After injection, the morpholino simply diffuses throughout the cells, encountering mRNAs and turning off genes in a stochastic fashion.
-        </p>
+  <h3>
+    Oligonucleotides, or why Moderna is a billion-dollar company.
+  </h3>
+  <p>
+    For those who are not particularly familiar with biotech industry, Moderna is a (rather high-profile) company
+    founded in 2010 by several Harvard faculty.
+    Its focus is drugs based on RNA (DNA's less boring counterpart), rather than the conventional small-molecule
+    approach.
+    In particular, the biotech industry has long relied on the protein-target approach, in which one first identifies a
+    faulty protein of interest (e.g. a checkpoint gone haywire in cancer cells) and then designs a molecular substance
+    to block or activate that protein.
+    However, this often doesn't work as expected, causing unwanted side effects or even horrible toxicity.
+    Hence, the biotech industry has turned to other technologies, such as biologics, and, in Moderna's case, mRNA.
+    Biologics are the kinds of proteins-turned-drugs that have basically included all the major breakthrough cancer
+    therapies of the last few decades, including Herceptin (breast cancer), Rituxan (lymphoma) and Keytruda (melanoma).
+  </p>
+  <p>
+    The other big thing that might turn out to revolutionize our current therapeutics are oligonucleotides, such as RNA.
+    Because many diseases are caused by the nuclear material of their vector (most prominently viruses), RNA provides a
+    unique strategy towards attacking new targets or even circumventing existing problems.
+    Despite their great promise, it's still far too soon to determine whether this new strategy will pan out.
+  </p>
 
-        <p>
-        	As I mentioned at the beginning of this section, these two aspects—spatial and temporal control—are essential to a detailed understanding of development; but the native approach of injecting morpholinos seems to preclude this.
-        	A key development then was the idea of <i>caged</i> morpholinos (cMOs).
-        	What if we could turn on and turn off the morpholino activity while it was already in the zebrafish, perhaps by activating it through an external cue?
-        	The idea then is as follows: through a chemical modification of the morpholino, we attach the two ends together (caging) so that it is unable to bind to the target mRNA.
-        	Then, we use light (which can be tuned very selectively) to break apart the chemical cage and allow the morpholino to hybridize.
-        </p>
+  <h3>
+    Morpholinos
+  </h3>
+  <p>
+    Now, it turns out that long before people began thinking about using synthetic oligonucleotides for therapeutic
+    purposes, researchers have employed them for probing biological systems.
+    In develomental biology, scientists often want to ask questions along the lines of when and where to specific
+    anatomies develop?
+    More specifically, we often are trying to figure out how specific genes, molecules, and environmental cues interact
+    with both <i>spatial</i> and <i>temporal</i> control to generate the body plans of animals we see around us.
+    For example, how do we get left-right symmetry and asymmetry?
+    How does anterior-posterior organization arise?
+    How do limbs develop?
+    Since all these processes are controlled at heart by the action of genes and proteins, oligonucleotides present a
+    powerful tool for probing them.
+    In essence they allow us to selectively turn off (and on) genes at different points during development and at
+    different locations in the body.
+    With this knowledge, we can begin to untangle the complex biological networks that orchestrate the creation of a
+    living organism from a single cell.
+  </p>
+  <p>
+    Morpholinos are a kind of oligonucleotide that chemical biologists have created to control such developmental
+    processes.
+    Recall from biology that each RNA nucleotide is composed of a sugar backbone (ribose), a nitrogenous base (adenine,
+    guanine, cytosine, or uracil), and a phosphate group.
+    In morpholinos, however, there are two major changes with perturb the chemical stability: first, the ribose is
+    converted to a morpholine ring, a six-membered oxygen and nitrogen heterocycle; and, second, one of the oxygens on
+    the phosphate group is converted to a nitrogen, making a <i>phosphoramidate</i> group.
+    The details are not so important, but the effect of these changes is that morpholinos are much more stable <i>in
+      vivo</i> than RNA, which disintegrates rather quickly (and thus renders it difficult to use for biological
+    experiments).
+  </p>
 
-        <p>
-        	Why, then, does this give us spatial and temporal control?
-        	It is because the experimentalist can decide exactly when and where to shine light onto our zebrafish, thus enabling precise and localized activation of morpholino activity.
-        	In practice, one usually employs a confocal laser to ensure a small area of focus and illuminates the embryo at varying stages of development.
-        	With this method, people have been able to probe several essential genes for zebrafish function, including <i>ntla</i> (no-tail) and Tbox genes, which control front-back patterning in the embryo (see <a href="https://pubmed.ncbi.nlm.nih.gov/27376691/">here</a> or <a href="https://pubmed.ncbi.nlm.nih.gov/22286130/">here</a> for more details).
+  <p>
+    As a result, a synthetic morpholino, armed with the correct complementary gene sequence to a target mRNA, can
+    hybridize (bind) to that mRNA <i>in vivo</i> and knockdown (i.e., shutoff) the gene of interest.
+    Although morpholinos are a formidable tool for investigating effects of specific genes, they suffer from precision
+    both spatially and temporally.
+    When working with zebrafish, the typical protocol involves injecting the embryos at the single-cell (zygote) stage
+    with the morpholino of choice, but this inevitably causes the morpholino to spread throughout the fish as it grows,
+    preventing one from, say, turnoff a gene in only the fish's tail.
+    At the same time, it is challenging to control the time at which the morpholino acts.
+    After injection, the morpholino simply diffuses throughout the cells, encountering mRNAs and turning off genes in a
+    stochastic fashion.
+  </p>
 
-        </p>
+  <p>
+    As I mentioned at the beginning of this section, these two aspects—spatial and temporal control—are essential to a
+    detailed understanding of development; but the native approach of injecting morpholinos seems to preclude this.
+    A key development then was the idea of <i>caged</i> morpholinos (cMOs).
+    What if we could turn on and turn off the morpholino activity while it was already in the zebrafish, perhaps by
+    activating it through an external cue?
+    The idea then is as follows: through a chemical modification of the morpholino, we attach the two ends together
+    (caging) so that it is unable to bind to the target mRNA.
+    Then, we use light (which can be tuned very selectively) to break apart the chemical cage and allow the morpholino
+    to hybridize.
+  </p>
 
-        <p><i>Under construction...!</i></p>
+  <p>
+    Why, then, does this give us spatial and temporal control?
+    It is because the experimentalist can decide exactly when and where to shine light onto our zebrafish, thus enabling
+    precise and localized activation of morpholino activity.
+    In practice, one usually employs a confocal laser to ensure a small area of focus and illuminates the embryo at
+    varying stages of development.
+    With this method, people have been able to probe several essential genes for zebrafish function, including
+    <i>ntla</i> (no-tail) and Tbox genes, which control front-back patterning in the embryo (see <a
+      href="https://pubmed.ncbi.nlm.nih.gov/27376691/">here</a> or <a
+      href="https://pubmed.ncbi.nlm.nih.gov/22286130/">here</a> for more details).
+
+  </p>
+
+  <p><i>Under construction...!</i></p>
 
 
 
-        <hr>
-        <p><a href="index.html">Home</a> | <a href="../research.html">Research</a>
-        </p>
+  <hr>
+  <p><a href="index.html">Home</a> | <a href="../research.html">Research</a>
+  </p>
 
-        <small>
-            Last updated August 18, 2020.
-        </small>
-    </body>
+  <small>
+    Last updated August 18, 2020.
+  </small>
+</body>
+
 </html>

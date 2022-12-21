@@ -1,4 +1,6 @@
-* {box-sizing:border-box}
+* {
+  box-sizing: border-box
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -13,7 +15,8 @@
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -35,8 +38,9 @@
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
@@ -71,7 +75,8 @@
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
@@ -84,13 +89,23 @@
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
 /* #comment-box, #post {
@@ -99,44 +114,54 @@
 
 /* Comment box settings */
 #HCB_comment_box {
-    font-family: "Source Sans Pro", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
+
 #HCB_comment_box #HCB_comment_form_box {
-    padding-bottom: 0px;
+  padding-bottom: 0px;
 }
+
 #HCB_comment_box .hcb-icon {
-	width: 5%;
-	display: block;
-	margin: 0 auto;
+  width: 5%;
+  display: block;
+  margin: 0 auto;
 }
+
 #HCB_comment_box #hcb_form {
-    font-family: "Source Sans Pro", sans-serif;
-    margin-top: 0px;
+  font-family: "Source Sans Pro", sans-serif;
+  margin-top: 0px;
 }
+
 #HCB_comment_box #comments_list {
-    font-family: "Source Sans Pro", sans-serif;
-    margin-top: 0px;
+  font-family: "Source Sans Pro", sans-serif;
+  margin-top: 0px;
 }
+
 #HCB_comment_box #hcb_form {
-    font-family: "Source Sans Pro", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
+
 #HCB_comment_box .date {
-	font-size: 13px;
-	color: lightgray;
-	text-decoration: none;
+  font-size: 13px;
+  color: lightgray;
+  text-decoration: none;
 }
-#HCB_comment_box #hcb_form .home-desc a, #HCB_comment_box .home-desc a:visited {
-	color: #dbbaff;;
-	text-decoration: none;
+
+#HCB_comment_box #hcb_form .home-desc a,
+#HCB_comment_box .home-desc a:visited {
+  color: #dbbaff;
+  ;
+  text-decoration: none;
 }
+
 #HCB_comment_box .hcb-comment-tb button {
-	font-size: 14px;
-	color: #8bbaff;
-	text-decoration: none;
-	font-weight: normal;
-	border: none;
-	padding: 0;
-	margin-right: 4px;
-	background: none;
-	cursor: pointer;
+  font-size: 14px;
+  color: #8bbaff;
+  text-decoration: none;
+  font-weight: normal;
+  border: none;
+  padding: 0;
+  margin-right: 4px;
+  background: none;
+  cursor: pointer;
 }
