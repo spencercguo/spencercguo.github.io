@@ -1,6 +1,7 @@
 body {
     margin: 40px auto;
-    max-width: 650px;
+    /* max-width: 650px; */
+    width: 40%;
     line-height: 1.8;
     font-family: 'Source Sans Pro', sans-serif;
     /* font-family: 'Fira Sans', sans-serif; */
@@ -54,12 +55,12 @@ p {
     margin-bottom: 0;
 }
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 2px solid white;
-    margin: 1em 0;
-    padding: 0;
+    /* display: block; */
+    /* border: 5px solid whitesmoke; */
+    size: 4;
+    width: 60%;
+    color: rgb(223, 223, 223);
+    margin-top: 2%;
 }
 
 emph {
