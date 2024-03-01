@@ -3,8 +3,8 @@ body {
     /* max-width: 650px; */
     width: 40%;
     line-height: 1.8;
-    font-family: 'Source Sans Pro', sans-serif;
-    /* font-family: 'Fira Sans', sans-serif; */
+    /* font-family: 'Source Sans Pro', sans-serif; */
+    font-family: 'Fira Sans ExtraLight', sans-serif;
     font-size: 18px;
     font-weight: lighter;
     background-color: #536282;
@@ -14,7 +14,7 @@ body {
 
 h1 {
     font-size: 40px;
-    font-weight: bolder;
+    font-weight: 500;
 }
 h2 {
     font-size: 30px;
@@ -41,7 +41,7 @@ a {
     text-decoration: none;
 }
 a:hover {
-    /* text-decoration: underline; */
+    text-decoration: underline;
     font-style: italic;
 }
 img {
