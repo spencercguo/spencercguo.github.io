@@ -1,7 +1,9 @@
+
 body {
     margin: 40px auto;
     /* max-width: 650px; */
     width: 40%;
+    min-width: 300px;
     line-height: 1.8;
     /* font-family: 'Source Sans Pro', sans-serif; */
     font-family: 'Fira Sans ExtraLight', sans-serif;
