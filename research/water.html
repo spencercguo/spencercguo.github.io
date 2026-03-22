@@ -169,7 +169,10 @@
   </p>
 
   <small>
-    Last updated August 18, 2020.
+    Last updated <script>
+    document.write(new Date(document.lastModified).toLocaleDateString('en-US',
+        { month: 'long', day: 'numeric', year: 'numeric' }));
+</script>.
   </small>
 </body>
 

@@ -277,7 +277,10 @@
   </p>
 
   <small>
-    Last updated October 22, 2023.
+    Last updated <script>
+    document.write(new Date(document.lastModified).toLocaleDateString('en-US',
+        { month: 'long', day: 'numeric', year: 'numeric' }));
+</script>.
   </small>
 </body>
 
