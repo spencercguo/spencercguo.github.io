@@ -91,16 +91,14 @@ strong {
     color: white;
 }
 
-.column {
-  float: left;
-  width: 50%;
+.row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.column {
+  width: 50%;
 }
 
 .tab {
@@ -175,4 +173,25 @@ input[type=checkbox]:checked ~ label {
     text-decoration:none;
 }
 
+/* Responsive design for mobile devices */
+@media screen and (max-width: 768px) {
+    body {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    .image-container img {
+        width: 60%;
+        float: none;
+        margin: 0 auto;
+    }
+}
 
