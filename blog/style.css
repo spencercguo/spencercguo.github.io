@@ -1,5 +1,5 @@
 * {
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
 /* Slideshow container */
@@ -90,21 +90,21 @@
 
 @-webkit-keyframes fade {
   from {
-    opacity: .4
+    opacity: 0.4;
   }
 
   to {
-    opacity: 1
+    opacity: 1;
   }
 }
 
 @keyframes fade {
   from {
-    opacity: .4
+    opacity: 0.4;
   }
 
   to {
-    opacity: 1
+    opacity: 1;
   }
 }
 
@@ -146,7 +146,6 @@
 #HCB_comment_box #hcb_form .home-desc a,
 #HCB_comment_box .home-desc a:visited {
   color: #dbbaff;
-  ;
   text-decoration: none;
 }
 
